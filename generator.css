@@ -1,0 +1,43 @@
+#generator{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+    border: solid 1px var(--bs-border-color);
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0px var(--bs-border-color);
+}
+.container_content{
+    width: 200px;
+    margin: auto;
+    border: solid 2px var(--bs-tertiary-color);
+    padding: 20px;
+}
+
+.container_content_row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.container_content_row>label{
+    margin-right: 10px;
+}
+
+.container_content_row>input{
+    height: 30px;
+    width: 60px;
+}
+
+.container_content_button{
+    margin: auto;
+    display: block;
+}
+
+.container_seats_reservation{
+    display: none;
+}

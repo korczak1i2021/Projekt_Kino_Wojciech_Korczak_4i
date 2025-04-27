@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="generator.css">
+    <link rel="stylesheet" href="seats.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="generator">
+        <div class="container">
+            <div class="container_content">
+                <div class="container_content_row">
+                    <label class="form-label">Rzędy: </label>
+                    <input id="rows" type="number" class="form-control">
+                </div>
+                <div class="container_content_row">
+                    <label class="form-label">Miejsca: </label>
+                    <input id="cols" type="number" class="form-control">
+                </div>
+                <button class="container_content_button btn btn-primary" onclick="generation()">
+                    Generuj miejsca
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="seats">
+        <div class="container">
+            <h3 class="container_prices">
+                Ceny biletów
+            </h3>
+            <p class="container_price">
+                normalny: 30pln
+            </p>
+            <p class="container_price">
+                ulgowy: 25pln
+            </p>
+            <div id="container_seats">
+            </div>
+            <div class="container_buttons">
+                <button class="container_buttons_button btn btn-primary" onclick="chosenSeats()">Wybieram</button>
+                <button class="container_buttons_button btn btn-primary" onclick="changeChoise()">Zmień wybór</button>
+            </div>
+            <h3 class="container_seats_reservation">Zarezerwowane Miejsca</h3>
+            <div id="container_seats_list">
+
+            </div>
+            <p id="container_price"></p>
+            <button id="container_order" class="btn btn-info" onclick="placeOrder()">Złóż zamówienie</button>
+            <button id="container_new-order" class="btn btn-info">Nowe zamówienie</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

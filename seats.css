@@ -1,0 +1,38 @@
+#seats{
+    display: none;
+}
+
+#seats>.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container_seats{
+    border: solid 2px var(--bs-success);
+    padding: 20px;
+}
+
+.seat_empty{
+    background-color: var(--bs-success);
+}
+
+.seat_chosen{
+    background-color: var(--bs-warning);
+}
+
+.seat_taken{
+    background-color: var(--bs-secondary-bg);
+}
+
+#container_order{
+    display: none;
+}
+
+#container_new-order{
+    display: none;
+}
+
+#container_price{
+    display: none;
+}
