@@ -45,15 +45,16 @@
             </div>
             <div class="container_buttons">
                 <button class="container_buttons_button btn btn-primary" onclick="chosenSeats()">Wybieram</button>
-                <button class="container_buttons_button btn btn-primary" onclick="changeChoise()">Zmień wybór</button>
+                <button class="container_buttons_button btn btn-primary" onclick="changeChoise()" disabled>Zmień wybór</button>
             </div>
+            <h3 class="container_seats_validation">Nie wybrano żadnego miejsca</h3>
             <h3 class="container_seats_reservation">Zarezerwowane Miejsca</h3>
             <div id="container_seats_list">
 
             </div>
             <p id="container_price"></p>
             <button id="container_order" class="btn btn-info" onclick="placeOrder()">Złóż zamówienie</button>
-            <button id="container_new-order" class="btn btn-info">Nowe zamówienie</button>
+            <button id="container_new-order" class="btn btn-info" onclick="newOrder()">Nowe zamówienie</button>
         </div>
     </div>
 

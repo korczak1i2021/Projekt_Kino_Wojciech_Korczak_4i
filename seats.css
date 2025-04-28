@@ -36,3 +36,15 @@
 #container_price{
     display: none;
 }
+
+.container_seats_validation{
+    display: none;
+}
+
+.container_seats_row:nth-of-type(2n){
+    margin-left: -20px;
+}
+
+.container_seats_row:nth-of-type(2n+1){
+    margin-left: 20px;
+}
