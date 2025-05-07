@@ -126,7 +126,7 @@ function placeOrder() {
         }
         list_checkbox[i].disabled = true
     }
-    container_price.innerText = suma
+    container_price.innerText = suma +" pln"
     blockPeakedSeats()
     updateSeatsButtons()
     document.getElementsByClassName("container_buttons_button")[1].disabled=true

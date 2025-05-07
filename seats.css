@@ -13,6 +13,11 @@
     padding: 20px;
 }
 
+.container_seats_row{
+    display: flex;
+    justify-content: center;
+}
+
 .seat_empty{
     background-color: var(--bs-success);
 }
@@ -41,10 +46,34 @@
     display: none;
 }
 
+.container_buttons_button{
+    margin-top: 10px;
+}
+
 .container_seats_row:nth-of-type(2n){
     margin-left: -20px;
 }
 
 .container_seats_row:nth-of-type(2n+1){
     margin-left: 20px;
+}
+
+.container_seats_screen{
+    height: 10px;
+    width: 40px;
+    display: block;
+    border: 2px solid black;
+}
+
+#container_order{
+    margin-top: 10px;
+}
+
+#container_new-order{
+    margin-top: 10px;
+}
+
+#container_price{
+    margin-top: 10px;
+    font-size: 25px;
 }
